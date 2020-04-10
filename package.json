@@ -1,0 +1,23 @@
+{
+  "name": "serverlight",
+  "version": "1.0.0",
+  "description": "A lightweight Node.js server module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amazinigmech2418/ServerLight.git"
+  },
+  "keywords": [
+    "server"
+  ],
+  "author": "AmazingMech2418",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amazinigmech2418/ServerLight/issues"
+  },
+  "homepage": "https://github.com/amazinigmech2418/ServerLight#readme"
+}
