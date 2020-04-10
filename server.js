@@ -18,11 +18,15 @@ let server_code = (req,res) => {
         if(req.method == i[0]) {
           if(req_url.pathname == i[1]) {
             let stuff=i[2](bodyparser(body));
+            if(i[3]) {
+              head['Content-Type'] = i[3];
+            } else {
             if(typeof(stuff)=='object') {
               stuff = JSON.stringify(stuff);
               head['Content-Type'] = 'application/json'
             } else {
               //head['Content-Type'] = 'text/html'
+            }
             }
             res.writeHead(200,head);
             res.write(stuff.toString()||stuff);
