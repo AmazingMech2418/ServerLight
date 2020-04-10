@@ -10,7 +10,10 @@ class App {
     this.paths.push(["POST",path,callback]);
   }
   file(name) {
-    return (n)=>String(fs.readFileSync(name));
+    return (n)=>fs.readFileSync(name).toString();
+  }
+  image(path,file) {
+    this.paths.push(["GET",path,((n)=>fs.readFileSync(file).toString()),'image/jpg']);
   }
 }
 
